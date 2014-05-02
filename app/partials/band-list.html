@@ -1,0 +1,28 @@
+<header>
+  <nav>
+    <ul id="days">
+      <li
+      ng-repeat="x in days | orderBy:orderPropDay"
+      ng-click="newFilter(x)"
+      id="{{x.name}}"
+      >
+      {{x.id}}
+
+      </li>
+    </ul>
+  </nav>
+</header>
+<div id="container">
+  <ul id="bands">
+    <li 
+      id="t{{x.start | date : 'HHmm'}}"
+      class="{{x.stage}}"
+      ng-repeat="x in bands | orderBy:orderProp"
+      ng-if="x.day == filterBy " >
+        <a href="#/src/bands/{{x.id}}">  
+          <h1>{{x.name}}</h1>
+          <p>{{x.start | date : 'HH:mm'}} - {{x.finish | date : 'HH:mm'}}</p>
+        </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,81 @@
+@import "compass/reset";
+@import "compass/css3";
+
+body{
+    color: #666;
+}
+
+@mixin border($color){
+    border-left: $color .7em solid;
+
+}
+
+#days li{
+    @include box-sizing(border-box);
+    border-right: 1px solid;
+    display: inline-block;
+    line-height: 3em;
+    text-align: center;
+    width: 33.3%;
+
+    &:hover{
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    &:last-child{
+        border-right: none;
+    }
+}
+
+#container{
+    background: #4b4b4d;
+    color: #ddd;
+    text-align: center;
+
+    #bands li{
+    line-height: 2em;
+    padding: 1em;
+    border-radius: .3em;
+    border-bottom: #333 1px solid;
+    border-top: #ddd 1px solid;
+
+    
+    @include box-sizing(border-box);
+
+        &.stageA{
+            @include border(orange);
+        }
+        &.stageB{
+            @include border(green);
+        }
+        &.stageC{
+            @include border(blue);
+        }
+
+        h1{
+            text-align: center;
+            font-size:1.2em;
+        }
+
+        a{
+            text-decoration: none;
+            color: #ddd;
+
+        }
+    }
+
+    .detail-photo{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    .tags{
+        display: inline-block;
+        color: #4b4b4d;
+        background: #fff;
+        padding: 4px;
+        margin: 3px;                                
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Resurrection fest hour app",
+  "description": "A starter project for AngularJS",
+  "repository": "https://github.com/gerkoon/resurrectionApp",
+  "author":"Andoni Santiago a.k.a. gerkoon",
+  "devDependencies": {
+    }
+}
