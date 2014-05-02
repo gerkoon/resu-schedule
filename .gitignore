@@ -3,3 +3,4 @@ dbTemplate.json
 app/proba.html
 app/css
 lib/*
+!lib/angular/bower.json
