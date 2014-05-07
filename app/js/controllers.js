@@ -30,3 +30,4 @@ resurrectionController.controller('BandDetailCtrl', ['$scope', '$routeParams', '
       $scope.band = data;
     });
   }]);
+
