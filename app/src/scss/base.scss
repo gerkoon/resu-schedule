@@ -10,6 +10,17 @@ body{
 
 }
 
+header{
+    position:fixed;
+    top: 0px;
+    background: white;
+    width: 100%;
+}
+
+#container > * {
+    margin-top: 5em;
+}
+
 #days li{
     @include box-sizing(border-box);
     border-right: 1px solid;

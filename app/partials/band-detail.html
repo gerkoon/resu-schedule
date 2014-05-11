@@ -4,13 +4,14 @@
 </header>
 
 <div id="container">
-  <img ng-src="{{band.logo}}" alt="logo" class="detail-photo"/>
-  <img ng-src="{{band.picture}}" alt="band's picture" class="detail-photo"/>
+  <div>
+    <img ng-src="{{band.logo}}" alt="logo" class="detail-photo"/>
+    <img ng-src="{{band.picture}}" alt="band's picture" class="detail-photo"/>
 
-  <p class="description">{{band.snippet}}</p>
+    <p class="description">{{band.snippet}}</p>
 
-  <ul>
-    <li class="tags" ng-repeat="x in band.tags">{{x}}</li>
-</ul>
-
+    <ul>
+      <li class="tags" ng-repeat="x in band.tags">{{x}}</li>
+  </ul>
+  </div>
 </div>
