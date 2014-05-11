@@ -4,7 +4,9 @@
       <li
       ng-repeat="x in days | orderBy:orderPropDay"
       ng-click="newFilter(x)"
+      ng-class="{true:'selected'}[x.name==filterBy]"
       id="{{x.name}}"
+
       >
       {{x.id}}
 

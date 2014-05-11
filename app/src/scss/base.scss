@@ -14,7 +14,7 @@ body{
     @include box-sizing(border-box);
     border-right: 1px solid;
     display: inline-block;
-    line-height: 3em;
+    line-height: 5em;
     text-align: center;
     width: 33.3%;
 
@@ -26,6 +26,14 @@ body{
     &:last-child{
         border-right: none;
     }
+
+    &.selected{
+        background: orange;
+    }
+}
+
+#back-button{
+    line-height: 5em;
 }
 
 #container{
