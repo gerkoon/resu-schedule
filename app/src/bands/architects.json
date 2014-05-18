@@ -1,10 +1,9 @@
 {
     "name" : "Architects",
-    "snippet" : "Legendary European thrash band",
+    "snippet" : "Architects es una banda de metalcore británica de Brighton, Inglaterra, formada en 2004. La banda actualmente consiste en el vocalista Sam Carter, el baterista Dan Searle y su hermano gemelo, el guitarrista y teclista Tom Searle y Alex Dean en el bajo. La banda pasó por varios cambios de nombre antes de decidirse por Architects. Su primer nombre fue Inharmonic, que fue rápidamente cambiado a Counting the Days. Después de un par de años, este fue a su vez modificado para Architects. Han lanzado cinco álbumes de estudio y un EP compartido con Dead Swans.",
     "logo" : "#",
     "picture" : "#",
     "tags" : [
-            "Thrash",
-            "Metal"
+            "Metalcore"
         ]
 }
