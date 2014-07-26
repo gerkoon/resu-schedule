@@ -1,9 +1,10 @@
 @import "compass/reset";
 @import "compass/css3";
 
-$stageA : orange;
-$stageB : green;
+$stageA : green;
+$stageB : orange;
 $stageC : blue;
+$stageD : violet;
 $secondary: yellow;
 
 body{
@@ -75,6 +76,9 @@ header{
         }
         &.stageC{
             @include border($stageC);
+        }
+        &.stageD{
+            @include border($stageD);
         }
 
         h1{

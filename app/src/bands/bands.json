@@ -13,7 +13,7 @@
     {
         "id": "sick-of-it-all",
         "name":"Sick of it all",
-        "stage":"stageB",
+        "stage":"stageA",
         "url":"#",
         "imageUrl": "#",
         "day": "second",
@@ -35,7 +35,7 @@
     {
         "id": "converge",
         "name":"Converge",
-        "stage":"stageB",
+        "stage":"stageC",
         "url":"#",
         "imageUrl": "#",
         "day": "second",
@@ -123,7 +123,7 @@
     {
         "id": "carcass",
         "name":"Carcass",
-        "stage":"stageA",
+        "stage":"stageC",
         "url":"#",
         "imageUrl": "#",
         "day": "third",
@@ -134,7 +134,7 @@
     {
         "id": "architects",
         "name":"Architects",
-        "stage":"stageA",
+        "stage":"stageB",
         "url":"#",
         "imageUrl": "#",
         "day": "first",
@@ -145,7 +145,7 @@
     {
         "id": "bury-tomorrow",
         "name":"Bury Tomorrow",
-        "stage":"stageA",
+        "stage":"stageB",
         "url":"#",
         "imageUrl": "#",
         "day": "third",
@@ -167,7 +167,7 @@
     {
         "id": "texas-in-july",
         "name":"Texas in July",
-        "stage":"stageA",
+        "stage":"stageB",
         "url":"#",
         "imageUrl": "#",
         "day": "second",
@@ -288,7 +288,7 @@
     {
         "id": "ramallah",
         "name":"Ramallah",
-        "stage":"stageB",
+        "stage":"stageA",
         "url":"#",
         "imageUrl": "#",
         "day": "third",
@@ -332,7 +332,7 @@
     {
         "id": "heart-in-hand",
         "name":"Heart in Hand",
-        "stage":"stageB",
+        "stage":"stageA",
         "url":"#",
         "imageUrl": "#",
         "day": "second",
@@ -464,7 +464,7 @@
     {
         "id": "crowbar",
         "name":"Crowbar",
-        "stage":"stageC",
+        "stage":"stageA",
         "url":"#",
         "imageUrl": "#",
         "day": "first",
@@ -574,7 +574,7 @@
     {
         "id": "red-fang",
         "name":"Red Fang",
-        "stage":"stageC",
+        "stage":"stageA",
         "url":"#",
         "imageUrl": "#",
         "day": "first",
@@ -629,7 +629,7 @@
     {
         "id": "as-they-burn",
         "name":"As They Burn",
-        "stage":"stageC",
+        "stage":"stageB",
         "url":"#",
         "imageUrl": "#",
         "day": "third",
