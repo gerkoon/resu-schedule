@@ -26,9 +26,13 @@ resurrectionController.controller('ListCtrl', function($scope, $http) {
         $scope.filterBy = day.name;
     };
 
-    $scope.fav = function(id, $scope, localStorageService){
-      alert (id);
-      localStorageService.set(id,'Favorite');
+    $scope.fav = function(id, $scope){
+      if (localStorage[id]){
+        localStorage.removeItem(id);
+      }
+      else{
+        localStorage.setItem(id, "Fav");
+      }
     };
 
 });
