@@ -2,5 +2,5 @@ dbTemplate.json
 .sass-cache
 app/proba.html
 app/css
-lib/*
 !lib/angular/bower.json
+lib/*

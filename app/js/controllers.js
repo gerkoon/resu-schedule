@@ -1,12 +1,16 @@
 'use strict'
 
-var resurrectionController = angular.module('resurrectionController', []);
+var resurrectionController = angular.module('resurrectionController', ['LocalStorageModule']);
 
-resurrectionController.controller('ListCtrl', function($scope, $http) {
+resurrectionController.controller('DayCtrl', function($scope, $http) {
   
   $http.get('src/days/days.json').success(function(data) {
     $scope.days = data;
   });
+
+});
+
+resurrectionController.controller('ListCtrl', function($scope, $http) {
 
   $http.get('src/bands/bands.json').success(function(data) {
     $scope.bands = data;
@@ -18,9 +22,14 @@ resurrectionController.controller('ListCtrl', function($scope, $http) {
     
     $scope.filterBy = 'first';
 
-    $scope.newFilter = function(x){
-        $scope.filterBy = x.name;
-    }
+    $scope.newFilter = function(day){
+        $scope.filterBy = day.name;
+    };
+
+    $scope.fav = function(id, $scope, localStorageService){
+      alert (id);
+      localStorageService.set(id,'Favorite');
+    };
 
 });
 

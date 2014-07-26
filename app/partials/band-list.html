@@ -1,14 +1,14 @@
-<header>
+<header ng-controller="DayCtrl">
   <nav>
     <ul id="days">
       <li
-      ng-repeat="x in days | orderBy:orderPropDay"
-      ng-click="newFilter(x)"
-      ng-class="{true:'selected'}[x.name==filterBy]"
-      id="{{x.name}}"
+      ng-repeat="day in days | orderBy:orderPropDay"
+      ng-click="newFilter(day)"
+      ng-class="{true:'selected'}[day.name==filterBy]"
+      id="{{day.name}}"
 
       >
-      {{x.id}}
+      {{day.id}}
 
       </li>
     </ul>
@@ -17,14 +17,18 @@
 <div id="container">
   <ul id="bands">
     <li 
-      id="t{{x.start | date : 'HHmm'}}"
-      class="{{x.stage}}"
-      ng-repeat="x in bands | orderBy:orderProp"
-      ng-if="x.day == filterBy " >
-        <a href="#/src/bands/{{x.id}}">  
-          <h1>{{x.name}}</h1>
-          <p>{{x.start | date : 'HH:mm'}} - {{x.finish | date : 'HH:mm'}}</p>
+      id="t{{band.start | date : 'HHmm'}}"
+      class="{{band.stage}}"
+      ng-repeat="band in bands | orderBy:orderProp"
+      ng-if="band.day == filterBy " >
+        <a href="#/src/bands/{{band.id}}">  
+          <h1>{{band.name}}</h1> 
+          <p>{{band.start | date : 'HH:mm'}} - {{band.finish | date : 'HH:mm'}}</p>
         </a>
+
+        <button ng-click="fav(band.id)">
+          Favorite
+        </button>
     </li>
   </ul>
 </div>

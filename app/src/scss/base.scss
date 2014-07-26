@@ -1,6 +1,11 @@
 @import "compass/reset";
 @import "compass/css3";
 
+$stageA : orange;
+$stageB : green;
+$stageC : blue;
+$secondary: yellow;
+
 body{
     color: #666;
 }
@@ -39,7 +44,7 @@ header{
     }
 
     &.selected{
-        background: orange;
+        background: $secondary;
     }
 }
 
@@ -63,13 +68,13 @@ header{
     @include box-sizing(border-box);
 
         &.stageA{
-            @include border(orange);
+            @include border($stageA);
         }
         &.stageB{
-            @include border(green);
+            @include border($stageB);
         }
         &.stageC{
-            @include border(blue);
+            @include border($stageC);
         }
 
         h1{
@@ -80,21 +85,42 @@ header{
         a{
             text-decoration: none;
             color: #ddd;
+            display: inline-block;
 
         }
     }
+}
 
-    .detail-photo{
-        display: block;
-        width: 90%;
-        margin: auto;
+.detail-photo{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.tags{
+    display: inline-block;
+    color: #4b4b4d;
+    background: #fff;
+    padding: 4px;
+    margin: 3px;                                
+}
+
+.fav-button{
+    border-radius: 100%;
+    border: solid $secondary 2px;
+    background: none;
+    width: 2rem;
+    height: 2rem;
+    float: right;
+    text-indent: -9999px;
+
+    &:hover{
+        border: solid $secondary 4px;
     }
 
-    .tags{
-        display: inline-block;
-        color: #4b4b4d;
-        background: #fff;
-        padding: 4px;
-        margin: 3px;                                
+    &.active{
+        border: none;
+        background: $secondary;
     }
 }
+

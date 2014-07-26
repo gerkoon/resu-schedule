@@ -1,10 +1,9 @@
 {
     "name" : "Carcass",
-    "snippet" : "Legendary European thrash band",
+    "snippet" : "Carcass es una banda británica procedente de Liverpool. Carcass surge como una banda brutal llena de energía, con líricas sobre enfermedades humanas, con una atmósfera carnicera y llena de un sonido crudo e intenso. Carcass fue innovador, formando parte de la oleada de bandas de agresividad como Napalm Death y Pungent Stench.",
     "logo" : "#",
     "picture" : "#",
     "tags" : [
-            "Thrash",
-            "Metal"
+            "Death Metal"
         ]
 }

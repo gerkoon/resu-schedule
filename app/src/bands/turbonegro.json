@@ -1,9 +1,11 @@
 {
     "name" : "Turbonegro",
-    "snippet" : "If you like bands like Hellacopters, Velvet Revolver,... thats your band too",
+    "snippet" : "Turbonegro es una banda de rock noruega fundada en 1989 por el bajista de origen estadounidense Thomas Seltzer (Happy Tom), el vocalista Pål Erik Carlin, el batería Carlos Carrasco y los guitarristas Vegard Heskestad, Pål Bøttger Kjærnes (Pål Pot Pamparius) y Rune Grønn (Rune Rebellion) en Oslo. La banda se separó en el año 1998, pero se reformó en el 2002. Su estilo musical mezcla glam rock, punk rock y hard rock y a menudo es descrito como 'deathpunk'.",
     "logo" : "#",
     "picture" : "#",
     "tags" : [
-            "Scandinavian Rock"
+            "Scandinavian Rock",
+            "Hard Rock",
+            "Punk Rock"
         ]
 }

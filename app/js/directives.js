@@ -10,9 +10,7 @@ resurrectionApp.directive('backButton', function(){
 
             function goBack(){
                 history.back();
-                //scope.$apply();
             }
-            
         }
     };
 });
