@@ -1,6 +1,6 @@
 'use strict'
 
-var resurrectionController = angular.module('resurrectionController', ['LocalStorageModule']);
+var resurrectionController = angular.module('resurrectionController', []);
 
 resurrectionController.controller('DayCtrl', function($scope, $http) {
   
